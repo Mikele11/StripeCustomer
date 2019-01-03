@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+td, th {
+  padding: 0.5rem;
+  text-align: left;
+}
+tr:nth-child(2n) {
+  background: #f0f0f0; /* Цвет фона */
+} 
+table {
+  border-collapse: collapse;
+  height: 200px;
+}
+thead {
+  background: #007bff;
+  color: white;
+}
+tbody {
+  height: 80px;
+  overflow: auto;
+}
+button>a {
+  color: white;
+}
+.addCust {
+  float: right;
+  color: white;
+  background: #007bff;
+}
+.exist {
+  height: 53px;
+  width: 40%;
+  background: #b5b5e4;
+  text-align: center;
+  padding-top: 14px;
+}
+.addBtn {
+  width: 60%;
+}
+.butt {
+  display: -webkit-inline-box;
+  width: 100%;
+}
+.addCustLeft {
+  background: #007bff;
+  float: left;
+  color: white;
+}
