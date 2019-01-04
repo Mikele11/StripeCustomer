@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({'extended':'false'}));
 app.use(express.static(path.join(__dirname, 'build')));
 
 
-app.post('/create', function(req, res, next) {
+app.post('https://angry-benz-067bb7.netlify.com/create', function(req, res, next) {
 
   stripe.customers.create({
     account_balance: +req.body.balance,
@@ -27,7 +27,7 @@ app.post('/create', function(req, res, next) {
     console.log('add success',customer); 
   });
 });
-app.get('/list', function(req, res, next) {
+app.get('https://angry-benz-067bb7.netlify.com/list', function(req, res, next) {
   stripe.customers.list(
     { limit: 300 },
     function(err, customers) {
